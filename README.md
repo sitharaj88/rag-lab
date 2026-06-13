@@ -35,9 +35,9 @@ A complete, 100%-local RAG app (Ollama + ChromaDB + sentence-transformers) lives
 
 1. Push this repo to GitHub.
 2. In **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions**.
-3. Push to `main`. The workflow in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) builds and publishes automatically.
+3. **Deploy manually** when you're ready: go to the **Actions** tab → **Deploy RAG Lab to GitHub Pages** → **Run workflow** (or run `gh workflow run deploy.yml`). The workflow in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) builds with `--strict` and publishes.
 
-Once enabled, the site publishes to **<https://sitharaj88.github.io/rag-lab/>**.
+Deployment is intentionally manual — pushing to `main` does **not** auto-publish. The site publishes to **<https://sitharaj88.github.io/rag-lab/>**.
 
 ## Contributing
 

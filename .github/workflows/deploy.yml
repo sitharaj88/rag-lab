@@ -1,11 +1,12 @@
 name: Deploy RAG Lab to GitHub Pages
 
-# Builds the MkDocs site and publishes it to GitHub Pages on every push to main.
-# One-time setup in your repo: Settings -> Pages -> Build and deployment -> Source: "GitHub Actions".
+# Builds the MkDocs site and publishes it to GitHub Pages.
+# Deployment is MANUAL: trigger it from the repo's Actions tab
+# (Actions -> "Deploy RAG Lab to GitHub Pages" -> "Run workflow"),
+# or via `gh workflow run deploy.yml`.
+# One-time setup: Settings -> Pages -> Build and deployment -> Source: "GitHub Actions".
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
