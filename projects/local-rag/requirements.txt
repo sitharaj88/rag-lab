@@ -1,0 +1,6 @@
+# 100% local RAG stack — no API keys required.
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+ollama>=0.3.0
+pypdf>=4.2.0
+streamlit>=1.36.0

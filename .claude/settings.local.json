@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($p=\"c:\\\\Users\\\\ASUS\\\\Documents\\\\fde_engineer\"; Test-Path $p; \\(Get-ChildItem -Force $p | Measure-Object\\).Count; python --version; git --version)"
+    ]
+  }
+}

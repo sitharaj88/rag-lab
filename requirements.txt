@@ -1,0 +1,3 @@
+# Documentation site (build & serve the portal locally)
+mkdocs-material>=9.5.0
+pymdown-extensions>=10.7

@@ -1,0 +1,25 @@
+# MkDocs build output
+site/
+_site/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# RAG sample-project local data
+projects/**/.chroma/
+projects/**/chroma_db/
+projects/**/storage/
+projects/**/*.sqlite3
+projects/**/data/*.pdf
+!projects/**/data/.gitkeep
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.log

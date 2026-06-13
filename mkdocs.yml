@@ -1,0 +1,201 @@
+site_name: RAG Lab — Learn Retrieval-Augmented Generation
+site_description: A free, open, beginner-to-advanced learning portal for building RAG systems with local LLMs.
+site_author: RAG Lab Contributors
+site_url: https://sitharaj88.github.io/rag-lab/
+repo_url: https://github.com/sitharaj88/rag-lab
+repo_name: rag-lab
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; RAG Lab — content licensed CC BY 4.0, code MIT.
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sitharaj88
+      name: GitHub
+    - icon: fontawesome/solid/globe
+      link: https://sitharaj.in
+      name: Website
+    - icon: simple/buymeacoffee
+      link: https://www.buymeacoffee.com/sitharaj88
+      name: Buy me a coffee
+  generator: false
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - getting-started/what-is-rag.md
+      - getting-started/why-local-llm.md
+      - getting-started/environment-setup.md
+      - getting-started/local-llm-ollama.md
+  - Python:
+      - python/index.md
+      - Foundations:
+          - python/foundations/setup-and-tooling.md
+          - python/foundations/syntax-and-types.md
+          - python/foundations/data-structures.md
+          - python/foundations/functions-and-modules.md
+          - python/foundations/oop.md
+          - python/foundations/files-and-errors.md
+      - Data & ML Python:
+          - python/data-ml/numpy.md
+          - python/data-ml/pandas.md
+          - python/data-ml/matplotlib.md
+          - python/data-ml/scikit-learn.md
+      - AI Python:
+          - python/ai-python/typing-and-pydantic.md
+          - python/ai-python/async.md
+          - python/ai-python/packaging.md
+          - python/ai-python/working-with-model-apis.md
+  - Foundations:
+      - foundations/llm-basics.md
+      - foundations/embeddings.md
+      - foundations/vector-databases.md
+      - foundations/chunking.md
+      - foundations/retrieval.md
+      - foundations/prompting-rag.md
+  - Building Blocks:
+      - building-blocks/document-loaders.md
+      - building-blocks/text-splitting.md
+      - building-blocks/indexing-pipeline.md
+      - building-blocks/generation.md
+  - Tutorials:
+      - tutorials/index.md
+      - tutorials/01-minimal-rag.md
+      - tutorials/02-rag-with-ollama-chroma.md
+      - tutorials/03-streamlit-chat-app.md
+      - tutorials/04-pdf-qa.md
+  - SDKs & Libraries:
+      - sdks/index.md
+      - sdks/versions-and-deprecations.md
+      - Orchestration:
+          - sdks/langchain.md
+          - sdks/llamaindex.md
+          - sdks/haystack.md
+      - Model & Embedding SDKs:
+          - sdks/transformers.md
+          - sdks/sentence-transformers.md
+          - sdks/ollama-sdk.md
+          - sdks/hosted-sdks.md
+      - Vector DBs & Data:
+          - sdks/faiss.md
+          - sdks/qdrant.md
+          - sdks/weaviate.md
+          - sdks/pgvector.md
+          - sdks/data-loaders.md
+      - App & Serving:
+          - sdks/fastapi.md
+          - sdks/streamlit.md
+          - sdks/gradio.md
+          - sdks/docker.md
+  - Advanced:
+      - Retrieval techniques:
+          - advanced/hybrid-search.md
+          - advanced/reranking.md
+          - advanced/query-transformation.md
+          - advanced/query-routing.md
+          - advanced/late-chunking.md
+          - advanced/retrieval-techniques-compared.md
+      - Architectures:
+          - advanced/agentic-rag.md
+          - advanced/graph-rag.md
+          - advanced/multimodal-rag.md
+          - advanced/rag-over-sql.md
+          - advanced/long-context-caching-memory.md
+      - Evaluation, Security & Ops:
+          - advanced/evaluation.md
+          - advanced/observability.md
+          - advanced/prompt-injection-security.md
+          - advanced/guardrails.md
+          - advanced/production.md
+  - Tools & Ecosystem:
+      - tools/index.md
+      - tools/ollama.md
+      - tools/local-serving.md
+      - tools/langchain.md
+      - tools/llamaindex.md
+      - tools/chromadb.md
+      - tools/vector-stores.md
+      - tools/embedding-models.md
+      - tools/choosing-models.md
+  - Projects:
+      - projects/index.md
+      - projects/local-rag.md
+      - projects/multi-pdf-research-assistant.md
+      - projects/codebase-qa.md
+      - projects/hybrid-rerank-rag.md
+  - Resources:
+      - resources/glossary.md
+      - resources/further-reading.md
+      - resources/notebooks.md
+      - resources/exercises.md
